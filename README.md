@@ -1,4 +1,4 @@
 # The useless web
 
-![useless](https://media.giphy.com/media/lcjWzvc9po5Og6eV4V/giphy.gif)
+![useless](https://media.giphy.com/media/3DvmiSZ6eoWSnbies1/giphy.gif)
 
