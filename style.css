@@ -22,16 +22,19 @@
 
 body {
   background-color: var(--bg-color);
+  font-family: var(--font-family);
   height: 2000px;
+  display: flex;
+  flex-direction: column;
 }
 
 /*MAIN*/
 
 main {
-  font-family: var(--font-family);
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 1 0 auto;
   letter-spacing: 2px;
 }
 
@@ -76,6 +79,17 @@ button:focus {
   padding: 15px;
 }
 
+/*FOOTER*/
+.footer {
+  flex-shrink: 0;
+  text-align: center;
+}
+.footer a {
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+/*media queries*/
 @media only screen and (min-width: 768px) {
   .picture {
     width: 70%;
