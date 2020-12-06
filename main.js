@@ -15,7 +15,7 @@ updateDisplay();
 //change the title of the page when you start the count
 function changeTitle() {
   if (count < 0) {
-    title.innerHTML = "Are you going to the right direction?";
+    title.innerHTML = "Are you sure this is the right direction?";
   } else if (count > 0) {
     title.innerHTML = "Keep going!";
   } else {
@@ -57,4 +57,17 @@ window.addEventListener("scroll", () => {
   const y = 1 + (window.scrollY || window.pageYOffset) / 150;
   const [r, g, b] = [red / y, green / y, blue / y].map(Math.round);
   body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+});
+
+//to have a celebratory emoji dance when you hover over them
+const emojis = document.querySelectorAll(".emoji");
+const footer = document.querySelectorAll(".footer");
+
+emojis.forEach((emoji) => {
+  emoji.addEventListener("mouseover", () => {
+    emoji.style.fontSize = "5em";
+  });
+  emoji.addEventListener("mouseout", () => {
+    emoji.style.fontSize = "1.5em";
+  });
 });

@@ -84,6 +84,7 @@ button:focus {
   flex-shrink: 0;
   text-align: center;
   color: var(--font-color);
+  padding: 15px;
 }
 
 .footer span {
