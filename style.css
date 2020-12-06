@@ -83,10 +83,11 @@ button:focus {
 .footer {
   flex-shrink: 0;
   text-align: center;
-}
-.footer a {
   color: var(--font-color);
-  text-decoration: none;
+}
+
+.footer span {
+  font-size: 1.5em;
 }
 
 /*media queries*/
