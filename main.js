@@ -48,3 +48,13 @@ function highFive() {
     document.querySelector(".highFive").style.visibility = "hidden";
   }
 }
+
+//to darken the bg color when you scroll down
+const [red, green, blue] = [247, 140, 70];
+const body = document.querySelector("body");
+
+window.addEventListener("scroll", () => {
+  const y = 1 + (window.scrollY || window.pageYOffset) / 150;
+  const [r, g, b] = [red / y, green / y, blue / y].map(Math.round);
+  body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+});
