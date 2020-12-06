@@ -2,6 +2,9 @@ const counterDisplay = document.querySelector(".counter-number");
 const counterMinus = document.querySelector(".counter-minus");
 const counterPlus = document.querySelector(".counter-plus");
 const title = document.querySelector(".title");
+const song = new Audio();
+song.src =
+  "let_s_get_fit_count_to_100_count_to_100_song_counting_to_100_jack_hartmann_8150447242843232477.mp3";
 
 let count = 0;
 
