@@ -22,7 +22,7 @@ function changeTitle() {
   } else if (count > 0) {
     title.innerHTML = "Keep going!";
   } else {
-    title.innerHTML = "Can you count to a thousand?";
+    title.innerHTML = "Can you count to a hundred?";
   }
 }
 
