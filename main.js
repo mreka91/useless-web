@@ -31,6 +31,7 @@ counterPlus.addEventListener("click", () => {
   updateDisplay();
   highFive();
   changeTitle();
+  song.play();
 });
 
 counterMinus.addEventListener("click", () => {
@@ -38,6 +39,7 @@ counterMinus.addEventListener("click", () => {
   updateDisplay();
   highFive();
   changeTitle();
+  song.pause();
 });
 
 // thide the pic by default
