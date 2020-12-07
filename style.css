@@ -35,19 +35,19 @@ main {
   flex-direction: column;
   align-items: center;
   flex: 1 0 auto;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 h1,
 h2 {
   text-align: center;
   color: var(--font-color);
-  font-size: 3em;
-  padding: 15px;
+  font-size: 2em;
+  padding: 35px;
 }
 
 .content {
-  padding: 50px;
+  padding: 35px;
 }
 
 /*BUTTONS*/
@@ -93,7 +93,12 @@ button:focus {
 
 /*media queries*/
 @media only screen and (min-width: 768px) {
-  .picture {
+  .highFive {
     width: 70%;
+  }
+  h1,
+  h2 {
+    font-size: 3em;
+    letter-spacing: 2px;
   }
 }

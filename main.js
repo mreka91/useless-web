@@ -16,12 +16,8 @@ function updateDisplay() {
 updateDisplay();
 
 //change the title of the page when you start the count
-function changeTitle() {
-  if (count < 0) {
-    title.innerHTML = "Are you sure this is the right direction?";
-  } else if (count > 0) {
-    title.innerHTML = "Keep going!";
-  } else {
+function changeBackTitle() {
+  if (count == 0) {
     title.innerHTML = "Can you count to a hundred?";
   }
 }
@@ -30,7 +26,8 @@ counterPlus.addEventListener("click", () => {
   count++;
   updateDisplay();
   highFive();
-  changeTitle();
+  title.innerHTML = "Keep going!";
+  changeBackTitle();
   song.play();
 });
 
@@ -38,11 +35,12 @@ counterMinus.addEventListener("click", () => {
   count--;
   updateDisplay();
   highFive();
-  changeTitle();
+  title.innerHTML = "Are you sure this is the right direction?";
+  changeBackTitle();
   song.pause();
 });
 
-// thide the pic by default
+//to hide the pic by default
 document.querySelector(".highFive").style.visibility = "hidden";
 
 // to only show the picture when numbers end with 5
