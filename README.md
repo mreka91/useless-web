@@ -7,7 +7,7 @@
 This is our first JavaScript assignment at Yrgo. Our task was to create a useless website using only HTML, CSS and JavaScript.
 
 ## Testers:
-* 
+* Linn Josefsson
 * 
 ### Link to the website:
 https://useless-counter.netlify.app/
