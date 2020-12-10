@@ -12,6 +12,15 @@
   --font-family: "Fredoka One";
 }
 
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /*GENERAL*/
 
 * {
@@ -43,7 +52,7 @@ h2 {
   text-align: center;
   color: var(--font-color);
   font-size: 2em;
-  padding: 35px;
+  padding: 35px 0 35px 0;
 }
 
 .content {
@@ -91,10 +100,14 @@ button:focus {
   font-size: 1.5em;
 }
 
+.spin {
+  animation: spin 0.8s linear;
+}
+
 /*media queries*/
 @media only screen and (min-width: 768px) {
   .highFive {
-    width: 70%;
+    width: 60%;
   }
   h1,
   h2 {

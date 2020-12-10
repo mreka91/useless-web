@@ -2,11 +2,20 @@ const counterDisplay = document.querySelector(".counter-number");
 const counterMinus = document.querySelector(".counter-minus");
 const counterPlus = document.querySelector(".counter-plus");
 const title = document.querySelector(".title");
+const spinIt = document.querySelector("h2");
 const song = new Audio();
 song.src =
   "let_s_get_fit_count_to_100_count_to_100_song_counting_to_100_jack_hartmann_8150447242843232477.mp3";
 
 let count = 0;
+
+function spin() {
+  if (count == 100) {
+    spinIt.classList.add("spin");
+  } else {
+    spinIt.classList.remove("spin");
+  }
+}
 
 //display the count value
 function updateDisplay() {
@@ -29,6 +38,7 @@ counterPlus.addEventListener("click", () => {
   title.innerHTML = "Keep going!";
   changeBackTitle();
   song.play();
+  spin();
 });
 
 counterMinus.addEventListener("click", () => {
@@ -38,6 +48,7 @@ counterMinus.addEventListener("click", () => {
   title.innerHTML = "Are you sure this is the right direction?";
   changeBackTitle();
   song.pause();
+  spin();
 });
 
 //to hide the pic by default

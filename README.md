@@ -8,6 +8,7 @@ This is our first JavaScript assignment at Yrgo. Our task was to create a useles
 
 ## Testers:
 * Linn Josefsson
-* 
+* Gilda Eklöf
+
 ### Link to the website:
 https://useless-counter.netlify.app/
