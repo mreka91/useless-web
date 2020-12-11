@@ -4,33 +4,36 @@ const counterPlus = document.querySelector(".counter-plus");
 const title = document.querySelector(".title");
 const spinIt = document.querySelector("h2");
 const song = new Audio();
+
 song.src =
-  "let_s_get_fit_count_to_100_count_to_100_song_counting_to_100_jack_hartmann_8150447242843232477.mp3";
+  "let_s_get_fit_count_to_100_count_to_100_song_counting_to_100_jack_hartmann.mp3";
 
 let count = 0;
 
+//set the cD to value of count
+function updateDisplay() {
+  counterDisplay.innerHTML = count;
+}
+//call the function to display the count value
+updateDisplay();
+
+//change the title of the page back when you are at 0
+function changeBackTitle() {
+  if (count === 0) {
+    title.innerHTML = "Can you count to a hundred?";
+  }
+}
+
+// to spin the displayed number every time you reach a 100
 function spin() {
-  if (count % 100 == 0 && count !== 0) {
+  if (count % 100 === 0 && count !== 0) {
     spinIt.classList.add("spin");
   } else {
     spinIt.classList.remove("spin");
   }
 }
 
-//display the count value
-function updateDisplay() {
-  counterDisplay.innerHTML = count;
-}
-
-updateDisplay();
-
-//change the title of the page when you start the count
-function changeBackTitle() {
-  if (count == 0) {
-    title.innerHTML = "Can you count to a hundred?";
-  }
-}
-
+//what happens when you click on the plus
 counterPlus.addEventListener("click", () => {
   count++;
   updateDisplay();
@@ -41,6 +44,7 @@ counterPlus.addEventListener("click", () => {
   spin();
 });
 
+//what happens when you click on the minus
 counterMinus.addEventListener("click", () => {
   count--;
   updateDisplay();
@@ -51,10 +55,10 @@ counterMinus.addEventListener("click", () => {
   spin();
 });
 
-//to hide the pic by default
+//hide the pic by default
 document.querySelector(".highFive").style.visibility = "hidden";
 
-// to only show the picture when numbers end with 5
+//show the picture only with numbers ending with 5
 function highFive() {
   if (count % 10 == 5) {
     document.querySelector(".highFive").style.visibility = "visible";
@@ -75,7 +79,6 @@ window.addEventListener("scroll", () => {
 
 //to have a celebratory emoji dance when you hover over them
 const emojis = document.querySelectorAll(".emoji");
-const footer = document.querySelectorAll(".footer");
 
 emojis.forEach((emoji) => {
   emoji.addEventListener("mouseover", () => {

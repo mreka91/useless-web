@@ -5,13 +5,6 @@
     url("./fonts/FredokaOne-Regular.woff") format("woff");
 }
 
-:root {
-  --bg-color: rgb(247, 140, 70);
-  --accent-color: #bd1585;
-  --font-color: #ffffff;
-  --font-family: "Fredoka One";
-}
-
 @keyframes spin {
   from {
     transform: rotate(0);
@@ -19,6 +12,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+:root {
+  --bg-color: rgb(247, 140, 70);
+  --accent-color: #bd1585;
+  --font-color: #ffffff;
+  --font-family: "Fredoka One";
 }
 
 /*GENERAL*/
@@ -66,14 +66,14 @@ button {
   background-color: var(--accent-color);
   font-size: 2em;
   color: var(--font-color);
-  border: 2px dotted white;
+  border: 2px dotted var(--font-color);
 }
 
 button:active,
 button:focus {
   color: var(--accent-color);
   background-color: var(--bg-color);
-  border: 2px dotted white;
+  border: 2px dotted var(--font-color);
 }
 
 /*PICTURE*/
