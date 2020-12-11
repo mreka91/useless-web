@@ -10,7 +10,7 @@ song.src =
 let count = 0;
 
 function spin() {
-  if (count % 100 == 0) {
+  if (count % 100 == 0 && count !== 0) {
     spinIt.classList.add("spin");
   } else {
     spinIt.classList.remove("spin");
