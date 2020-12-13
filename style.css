@@ -84,7 +84,7 @@ button:focus {
 }
 
 .highFive {
-  width: 80%;
+  width: 90%;
   padding: 15px;
 }
 
@@ -107,7 +107,7 @@ button:focus {
 /*media queries*/
 @media only screen and (min-width: 768px) {
   .highFive {
-    width: 60%;
+    width: 70%;
   }
   h1,
   h2 {
