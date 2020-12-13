@@ -28,6 +28,7 @@ function changeBackTitle() {
 function spin() {
   if (count % 100 === 0 && count !== 0) {
     spinIt.classList.add("spin");
+    celebrate();
   } else {
     spinIt.classList.remove("spin");
   }
