@@ -10,7 +10,7 @@
       href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23ff0fb6%22></rect><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2290%22>👌</text></svg>"
     />
     <!-- own stylesheet -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/assets/styles/style.css" />
     <title>The pointless counter</title>
   </head>
   <body>
@@ -26,16 +26,16 @@
       <div class="picture">
         <img
           srcset="
-            ./img/responsive/highFive480.webp   480w,
-            ./img/responsive/highFive800.webp   800w,
-            ./img/responsive/highFive1000.webp 1000w
+            /assets/img/responsive/highFive480.webp   480w,
+            /assets/img/responsive/highFive800.webp   800w,
+            /assets/img/responsive/highFive1000.webp 1000w
           "
           sizes="
             (max-width: 480px) 480px,
             (max-width: 800px) 800px,
             1000px
           "
-          src="./img/responsive/highFive480.webp"
+          src="/assets/img/responsive/highFive480.webp"
           alt="Virtual high five"
           class="highFive"
         />
@@ -50,7 +50,7 @@
       </p>
     </footer>
     <!-- own javascript -->
-    <script src="main.js"></script>
-    <script src="secret.js"></script>
+    <script src="/assets/scripts/main.js"></script>
+    <script src="/assets/scripts/secret.js"></script>
   </body>
 </html>

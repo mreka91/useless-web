@@ -1,8 +1,8 @@
 @font-face {
   font-family: "Fredoka One";
   src: local("FredokaOne"),
-    url("./fonts/FredokaOne-Regular.woff2") format("woff2"),
-    url("./fonts/FredokaOne-Regular.woff") format("woff");
+    url("/assets/fonts/FredokaOne-Regular.woff2") format("woff2"),
+    url("/assets/fonts/FredokaOne-Regular.woff") format("woff");
 }
 
 @keyframes spin {
